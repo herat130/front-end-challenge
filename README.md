@@ -7,7 +7,7 @@ Sometimes I search for a movie, but I do not know the correct name and only reme
 
 
 ## Requirements
-- You use [this public movie API](https://sbot-fe-test.herokuapp.com/)
+- You use public movie API
 - You decide which information to show in the result list
 - There should be a page showing all the details for a specific movie (should be shown when the user clicks on a movie in the list)
 - You **use react** and any other library of your choice that best fits the needs for these requirements
@@ -18,22 +18,26 @@ Sometimes I search for a movie, but I do not know the correct name and only reme
 *(Optional: users want to be excited; which features, that go beyond the original scope of the challenge, can you imagine?
 If possible, pick 1 or 2 of them and implement it as well)*
 
-## Just more Techinal requirements
+## Public Moview API 
 Our api provides an endpoint to list the movies by query:
 
 **GET https://sbot-fe-test.herokuapp.com/api/v1/movies?query=whatever**
 
-Making a call to this endpoint brings a response with a **listening_token** in the body.
-You should use this token to listen on a specific **socket.io channel**, like:
+```json
+{"vote_count":524,"id":19265,"video":false,"vote_average":6.9,"title":"Whatever Works","popularity":10.371405,"poster_path":"/mGL6OgyBsrcoB4lnJNYvyqHrUY
+a.jpg","original_language":"en","original_title":"Whatever Works","genre_ids":[35,10749],"backdrop_path":"/3VgYTo2223LeXAQvUW8ZLc8niRY.jpg","adult":fals
+e,"overview":"Whatever Works explores the relationship between a crotchety misanthrope, Boris and a nave, impressionable young runaway from the south, M
+elody. When Melody's uptight parents arrive in New York to rescue her, they are quickly drawn into wildly unexpected romantic entanglements. Everyone di
+scovers that finding love is just a combination of lucky chance and appreciating the value of \"whatever works.\"","release_date":"2009-06-19","full_pos
+ter_path":"https://image.tmdb.org/t/p/w500//mGL6OgyBsrcoB4lnJNYvyqHrUYa.jpg","full_backdrop_path":"https://image.tmdb.org/t/p/w500//3VgYTo2223LeXAQvUW8Z
+Lc8niRY.jpg","listening_token":"1f6e85e6-b2cc-4913-baab-db5f16bcf1c5"}
 
-```javascript
-socket.on(`movies.${listening_token}`, (data) => {
-  //...
-});
 ```
 
 
-## Send the result
+
+
+## Result
 - Fork the project
 - Implement your solution
 - Open a Pull-Request to our Repository
