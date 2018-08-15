@@ -1,14 +1,28 @@
-Purpose of the project is to easy development , easy to maintain with enforce coading standards for team members.
-considering this i used typescript and ts-lint ...due to this reason only i increased the dev dependency in the this project
-still i want to use noad-sass but as i used bootstrap my css requirement is low and used the
+Purpose of the project is easy to develope , easy to maintain , easy to debug , enforce coading standards for all team members.
+considering this i used typescript and ts-lint...considering this reason only i increased the dev-dependency in the this project
 
-Technical stack : Typescript - React - Redux - Webpack - JEST - Enzyme
+##Technical stack 
+-Typescript 
+- React 
+- Redux 
+- Webpack 
+- JEST 
+- Enzyme
 
 Justification for Dependecy Used in the project.
+
 I used Typescript considering its benifits in long run of the project like in managing systematic code in team,debugging, auto suggession in IDE , compile time warnings etc.
+
 I used bootstrap to make responsive instead of writing css for different media resolution to save time and provide better user experience
-Polyfill Dependecy like isomorhic-fetch / es6-promise and object.assign to work application properly in different browser.
+
+Polyfill Dependecy like isomorhic-fetch / es6-promise and object.assign for cross browser compitability 
+
 Jest and enzyme [also redux-mock-store/ enzyme adapter] for testing purpose
+
+User exciting feature added like
+-search bar with debounce
+-desktop / mobile freindly UI
+-Visited movie page listing as jump links
 
 ![Component Architecture](/src/cd.png "Component Architecture")
 
