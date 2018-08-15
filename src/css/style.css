@@ -1,0 +1,31 @@
+body{
+    line-height: 28x;
+    background-image: url(../assets/animated-website-background-8.jpg);
+    background-size:cover;
+    color:#fff;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #000;
+}
+span.title{
+    color:#51aba7;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.blank-space-10{
+    display: block;
+    clear: both;
+    height:10px;
+}
+.blank-space-300{
+    display: block;
+    clear: both;
+    height:300px;
+}
+.search-bar{
+    height: 40px;
+    font-size: 22px;
+}
+a{
+    color:#7eff20;
+}

@@ -1,0 +1,69 @@
+{
+  "name": "finleap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "webpack-dev-server --hot --inline"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "enzyme": "^3.4.1",
+    "enzyme-adapter-react-16": "^1.2.0",
+    "es6-promise": "^4.2.4",
+    "isomorphic-fetch": "^2.2.1",
+    "jest": "^23.5.0",
+    "object.assign": "^4.1.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-mock-store": "^1.5.3",
+    "redux-thunk": "^2.3.0",
+    "throttle-debounce": "^2.0.1",
+    "ts-jest": "^23.1.3"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.13",
+    "@types/enzyme-adapter-react-16": "^1.0.3",
+    "@types/jest": "^23.3.1",
+    "@types/react": "^16.4.8",
+    "@types/react-dom": "^16.0.7",
+    "@types/react-redux": "^6.0.6",
+    "@types/react-router-dom": "^4.3.0",
+    "@types/redux": "^3.6.0",
+    "@types/redux-mock-store": "^1.0.0",
+    "awesome-typescript-loader": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.22.1",
+    "tslint": "^5.11.0",
+    "tslint-loader": "^3.6.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.0.1",
+    "url-loader": "^1.1.0",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testEnvironment": "jsdom",
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
