@@ -12,7 +12,15 @@ interface SerchStateType {
 
 class SearchComponent extends React.Component<SearchPropsTypes, SerchStateType> {
 
-    search = debounce(value => {
+    constructor(props: SearchPropsTypes) {
+        super(props);
+        this.state = {
+            searchTerm: '',
+        };
+        this.search = debounce(this.search, 500);
+    }
+
+    search = value => {
         // tslint:disable-next-line:no-shadowed-variable
         const { startSearch, clearSearch } = this.props;
         // const { value } = event.currentTarget;
@@ -24,13 +32,6 @@ class SearchComponent extends React.Component<SearchPropsTypes, SerchStateType> 
         this.setState({
             searchTerm: value,
         });
-    }, 1000);
-
-    constructor(props: SearchPropsTypes) {
-        super(props);
-        this.state = {
-            searchTerm: '',
-        };
     }
 
     displayResult(searchMovie: Movie) {
