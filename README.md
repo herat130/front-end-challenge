@@ -10,6 +10,8 @@ I used bootstrap to make responsive instead of writing css for different media r
 Polyfill Dependecy like isomorhic-fetch / es6-promise and object.assign to work application properly in different browser.
 Jest and enzyme [also redux-mock-store/ enzyme adapter] for testing purpose
 
+![Component Architecture](/src/cd.png "Component Architecture")
+
 To Start the Project
 npm start
 
