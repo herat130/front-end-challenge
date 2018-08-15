@@ -9,6 +9,8 @@ considering this i used typescript and ts-lint...considering this reason only i 
 - JEST 
 - Enzyme
 
+Unable to use SASS due to lack of time.
+
 Justification for Dependecy Used in the project.
 
 I used Typescript considering its benifits in long run of the project like in managing systematic code in team,debugging, auto suggession in IDE , compile time warnings etc.
