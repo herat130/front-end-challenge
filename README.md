@@ -22,11 +22,14 @@ Polyfill Dependecy like isomorhic-fetch / es6-promise and object.assign for cros
 Jest and enzyme [also redux-mock-store/ enzyme adapter] for testing purpose
 
 User exciting feature added like
--search bar with debounce
+-search bar with debounce / auto suggession of movies without clicking search icon
 -desktop / mobile freindly UI
 -Visited movie page listing as jump links
 
 ![Component Architecture](/src/cd.png "Component Architecture")
+
+To instlall dependancy
+npm install
 
 To Start the Project
 npm start
